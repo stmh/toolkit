@@ -26,4 +26,8 @@ class Tpl extends Silo {
     echo $content;
   }
 
+  static public fileExists($file_name) {
+    return file_exists($file_name . '.php');
+  }
+
 }
